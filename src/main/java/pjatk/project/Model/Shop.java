@@ -3,23 +3,23 @@ package pjatk.project.Model;
 import java.util.List;
 
 public class Shop {
-    private String shopId;
+    private int shopId;
     private String name;
     private List<Product> productList;
     private List<Product> soldList;
 
-    public Shop(String shopId, String name, List<Product> productList, List<Product> soldList) {
+    public Shop(int shopId, String name, List<Product> productList, List<Product> soldList) {
         this.shopId = shopId;
         this.name = name;
         this.productList = productList;
         this.soldList = soldList;
     }
 
-    public String getShopId() {
+    public int getShopId() {
         return shopId;
     }
 
-    public void setShopId(String shopId) {
+    public void setShopId(int shopId) {
         this.shopId = shopId;
     }
 
