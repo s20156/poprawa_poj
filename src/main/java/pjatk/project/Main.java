@@ -31,12 +31,5 @@ public class Main {
         Validator validateShopName = Validation.buildDefaultValidatorFactory().getValidator();
         Set<ConstraintViolation<Shop>> validateName = validateShopName.validate(shop);
         System.out.println(validateName);
-
-        shop.getProductList();
-
-
-        ShopService shopService = new ShopService(shop);
-        shopService.sellProduct(2, test);
-        shopService.getSoldProductsReport();
     }
 }
