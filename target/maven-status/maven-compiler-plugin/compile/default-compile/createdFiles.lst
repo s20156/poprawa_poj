@@ -1,4 +1,9 @@
 pjatk/project/Main.class
+pjatk/project/Model/PriceValidator.class
 pjatk/project/Model/Shop.class
+pjatk/project/Model/ShopNameValidator.class
 pjatk/project/Model/Customer.class
 pjatk/project/Model/Product.class
+pjatk/project/Model/ShopName.class
+pjatk/project/Model/Price.class
+pjatk/project/Controller/ShopService.class

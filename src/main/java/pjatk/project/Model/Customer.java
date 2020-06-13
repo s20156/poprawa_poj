@@ -6,9 +6,8 @@ public class Customer {
     private int id;
     private List<Product> purchasedProducts;
 
-    public Customer(int id, List<Product> purchasedProducts) {
+    public Customer(int id) {
         this.id = id;
-        this.purchasedProducts = purchasedProducts;
     }
 
     public int getId() {

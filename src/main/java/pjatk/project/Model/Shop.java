@@ -8,6 +8,7 @@ public class Shop {
     private String name;
     private List<Product> productList;
     private List<Product> soldList;
+    private List<Customer> customerList;
 
     public Shop(int shopId, String name) {
         this.shopId = shopId;
@@ -60,5 +61,13 @@ public class Shop {
 
     public void removeProductByIdFromSold(int id) {
         soldList.removeIf(product -> product.getId() == id);
+    }
+
+    public List<Customer> getCustomerList() {
+        return customerList;
+    }
+
+    public void setCustomerList(List<Customer> customerList) {
+        this.customerList = customerList;
     }
 }
