@@ -53,4 +53,12 @@ public class Shop {
     public void removeProductById(int id) {
         productList.removeIf(product -> product.getId() == id);
     }
+
+    public void addProductToSold(Product product) {
+        soldList.add(product);
+    }
+
+    public void removeProductByIdFromSold(int id) {
+        soldList.removeIf(product -> product.getId() == id);
+    }
 }
