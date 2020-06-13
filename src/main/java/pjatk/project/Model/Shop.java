@@ -10,9 +10,12 @@ public class Shop {
     private List<Product> soldList;
     private List<Customer> customerList;
 
-    public Shop(int shopId, String name) {
+    public Shop(int shopId, String name, List<Product> productList, List<Product> soldList, List<Customer> customerList) {
         this.shopId = shopId;
         this.name = name;
+        this.productList = productList;
+        this.soldList = soldList;
+        this.customerList = customerList;
     }
 
     public int getShopId() {
